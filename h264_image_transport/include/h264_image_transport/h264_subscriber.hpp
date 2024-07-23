@@ -70,7 +70,7 @@ protected:
     rclcpp::Node * node,
     const std::string &,
     const Callback &,
-    rmw_qos_profile_t) override
+    rmw_qos_profile_t)  // not overriding anymore for Iron+
   {
     RCLCPP_FATAL(node->get_logger(), "not used in Humble+");
   }
